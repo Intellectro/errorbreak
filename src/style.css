@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #19151e;
+    --color-border-light: hsla(263,8%,46%,.2);
+    --color-border-button: #3b82f6;
+    --font-sans: "Nunito", serif;
+    --font-mono: "JetBrains Mono", serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+    @apply box-border;
+    @apply font-sans;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin !important;
+}
+
+body {
+    @apply overflow-x-hidden;
+}
