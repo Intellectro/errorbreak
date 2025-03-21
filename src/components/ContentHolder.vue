@@ -98,7 +98,7 @@
                                 <div class="flex justify-between" v-for="({rows}, index) in cmdataarr" :key="index">
                                     <div class="flex flex-col gap-y-1" v-for="({_id, _icon, _content}) in rows" :key="_id">
                                         <div class="w-[40px] h-[40px] flex justify-center items-center">
-                                            <img :src="_icon" class="w-full h-full object-contain object-center" :alt="_icon.split('/').pop().split('.')[0]" />
+                                            <div v-html="_icon" />
                                         </div>
                                         <span class="text-[13px] text-slate-300 font-[550]">{{_content}}</span>
                                     </div>
