@@ -38,7 +38,8 @@ import { onMounted, useTemplateRef } from 'vue';
                 }
             }
         })
-    })
+    });
+    
 </script>
 
 <template>
